@@ -24,9 +24,17 @@ body {
     padding-top: 7px;
     padding-bottom: 7px;
     color: white;
+    font-size: 0.8rem;
 
-    background-color: darkolivegreen;
+    background-color: #465e2d;
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.84);
+}
+
+.statusBar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .statusBar div * {
@@ -46,6 +54,11 @@ body {
     text-decoration: unset;
 }
 
+.statusBar img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
 .desktop {
     width: 100%;
     height: 100%;
@@ -62,7 +75,7 @@ body {
     top: 90vh;
     z-index: 1000; /* Asegura que esté por encima */
 
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 11px;
 
