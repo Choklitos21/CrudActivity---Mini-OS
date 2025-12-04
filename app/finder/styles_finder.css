@@ -13,7 +13,7 @@ aside {
     width: 220px;        
     z-index: 1000;       
     overflow-y: auto;    
-    border-radius: 50%;
+    border-radius: 0%  0 8px 0%;
     background-color: #f0f0f0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
