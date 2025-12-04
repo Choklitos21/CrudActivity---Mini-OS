@@ -1,0 +1,19 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+aside {                
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 220px;        
+    z-index: 1000;       
+    overflow-y: auto;    
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
