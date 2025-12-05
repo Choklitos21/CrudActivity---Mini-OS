@@ -16,6 +16,10 @@ body {
     align-items: center;
 }
 
+img {
+    filter: invert(100%);
+}
+
 .statusBar {
     width: 100%;
     display: flex;
@@ -69,7 +73,7 @@ body {
 }
 
 .taskBar {
-    width: 80%;
+    width: auto;
     height: 60px;
     position: fixed;
     top: 90vh;
@@ -79,5 +83,95 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 11px;
 
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
 }
 
+.taskBar button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: unset;
+    color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 0;
+    background-color: unset;
+
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.taskBar button:hover {
+    transform: scale(1.1) translateY(-10px);
+}
+
+.taskBar button:first-child {
+    background-image: url("media/images/finder.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.taskBar button:nth-child(2) {
+    background-image: url("media/images/safari.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(3) {
+    background-image: url("media/images/photos.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(4) {
+    background-image: url("media/images/VCode.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(5) {
+    background-image: url("media/images/calculator.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(6) {
+    background-image: url("media/images/radar.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(7) {
+    background-image: url("media/images/settings.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(9) {
+    background-image: url("media/images/IA.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(10) {
+    background-image: url("media/images/weather.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.taskBar span {
+    color: rgba(255, 255, 255, 0.3);
+    height: 129%;
+    font-size: 60px;
+    font-weight: 100;
+}
