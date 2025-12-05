@@ -265,13 +265,13 @@ img {
     background-position: center;
 }
 .taskBar button:nth-child(3) {
-    background-image: url("media/images/photos.png");
+    background-image: url("media/icons-apps/fotos.png");
     object-fit: cover;
     background-size: cover;
     background-position: center;
 }
 .taskBar button:nth-child(4) {
-    background-image: url("media/images/VCode.png");
+    background-image: url("media/icons-apps/musica.png");
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -283,7 +283,7 @@ img {
     background-position: center;
 }
 .taskBar button:nth-child(6) {
-    background-image: url("media/images/radar.png");
+    background-image: url("media/icons-apps/terminal_icon.png");
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -295,7 +295,7 @@ img {
     background-position: center;
 }
 .taskBar button:nth-child(9) {
-    background-image: url("media/images/IA.png");
+    background-image: url("media/icons-apps/youtube.png");
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -312,4 +312,19 @@ img {
     height: 129%;
     font-size: 60px;
     font-weight: 100;
+}
+
+
+.iframeStyles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.iframeStyles ::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll */
 }
