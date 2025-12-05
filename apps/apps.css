@@ -6,4 +6,99 @@
 html {
     font-size: 62.5%;
 }
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 /* ----------------------------------- */
+.contenedor-principal {
+    width: 70%;
+    height: auto;
+    background-color: #4e4d4d1a;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+.contenedor-principal_apps {
+    width: 100%;
+    height: auto;
+    background-color: #00000049;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+.contenedor-encabezado_apps {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 4rem;
+    border-bottom: 1px solid gray;
+}
+.contenedor-encabezado_apps h1 {
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+/* -------------------------------------- */
+.contenedor-apps_usuario {
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    border-bottom: 1px solid green;
+}
+.contenedor-apps_usuario .navbar {
+    width: 100%;
+    background-color: #0004;
+}
+.contenedor-apps_usuario .navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    list-style: none;
+    overflow-x: scroll;
+}
+.contenedor-apps_usuario .navbar ul li {
+    background-color: rgb(228, 228, 228);
+    border-radius: 9px;
+    margin-right: 2rem;
+    padding: 0.3rem 0.4rem;
+}
+.contenedor-apps_usuario .navbar ul a {
+    text-decoration: none;
+    list-style: none;
+    color: #3d3c3ca2;
+}
+/*--------------------------------------------------  */
+.contenedor-apps_descargadas {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.contenedor-apps_descargadas article {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+.contenedor-apps_descargadas img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.contenedor-apps_descargadas span {
+    display: block;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+
