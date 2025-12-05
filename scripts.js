@@ -75,7 +75,7 @@ finderButtons.forEach(button => {
             iframeFinder.classList.add('iframeStyles');
             iframeFinder.setAttribute("id", "iframeShow");
 
-            iframeFinder.src = 'apps/apps.html'; // URL a mostrar
+            iframeFinder.src = 'apps/cesar/apps.html'; // URL a mostrar
             iframeFinder.width = '100%'; // Ancho completo del div
             iframeFinder.height = '100%'; // Alto completo del div
             iframeFinder.frameBorder = '0'; // Sin borde
