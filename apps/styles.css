@@ -15,6 +15,24 @@ input[type="search"] {
     outline: none;
 }
 
+
+input[type="search-pr"] {
+    flex-grow: 1;
+    padding:8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 24px;
+    outline: none;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 button {
     width: 35px;
     height: 35px;
@@ -75,6 +93,61 @@ button:hover {
 }
 
 
+.menu-user {
+    position: relative;
+}
+
+
+.menu-user:hover .menu-users {
+    display: block;
+}
 
 
 
+
+.menu-users {
+    display: none;
+    position:absolute;
+    top: 45px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 2);
+    min-width: 250px;
+    z-index: 1000;
+    padding: 3;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+
+.menu-option {
+    position:relative
+}
+
+
+.menu-option:hover .menu-options {
+    display: block;
+}
+
+
+
+.menu-options {
+    display: none;
+    position:absolute;
+    top: 45px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 2);
+    min-width: 250px;
+    z-index: 1000;
+    padding: 3;
+    margin: 0;
+    list-style: none;
+}
