@@ -28,8 +28,10 @@ html {
 
 .contenedor-principal_apps {
     width: 100%;
-    height: 630px;
-    background-color: rgba(207, 206, 206, 0.573);
+    height: 570px;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid rgb(255, 255, 255, 0.2);
     padding: 1rem;
     margin: 1rem;
     border-radius: 45px;
@@ -86,12 +88,12 @@ html {
 
  .contenedor-apps_descargadas {
     width: 90%;
-    min-width: 900px;
+    min-width: 800px;
     margin: 0 auto;
     border-radius: 2rem;
     height: 450px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     padding: 1rem;
     max-height: 750px; 
