@@ -1,5 +1,5 @@
 
-const finder = document.getElementById('finder');
+// const finder = document.getElementById('finder');
 const terminal = document.getElementById('terminal');
 const app3 = document.getElementById('miBoton');
 
@@ -32,30 +32,60 @@ updateClock();
 setInterval(updateClock, 1000);
 
 // For finder
-finder.addEventListener('click',  function toggleIframe() {
-    // Obtenemos el elemento iframe y el botón
-    var iframeFinder = document.getElementById('iframeShow');
+// finder.addEventListener('click',  function toggleIframe() {
+//     // Obtenemos el elemento iframe y el botón
+//     var iframeFinder = document.getElementById('iframeShow');
+//
+//     console.log(iframeFinder)
+//     if (iframeFinder) {
+//         appsOnDisplay.removeChild(iframeFinder);
+//     } else {
+//
+//         const iframeFinder = document.createElement('iframe');
+//
+//         iframeFinder.classList.add('iframeStyles');
+//         iframeFinder.setAttribute("id", "iframeShow");
+//
+//         iframeFinder.src = 'apps/apps.html'; // URL a mostrar
+//         iframeFinder.width = '100%'; // Ancho completo del div
+//         iframeFinder.height = '100%'; // Alto completo del div
+//         iframeFinder.frameBorder = '0'; // Sin borde
+//         iframeFinder.title = 'App Finder';
+//
+//         appsOnDisplay.appendChild(iframeFinder);
+//
+//     }
+//
+// });
 
-    console.log(iframeFinder)
-    if (iframeFinder) {
-        appsOnDisplay.removeChild(iframeFinder);
-    } else {
+const finderButtons = document.querySelectorAll('.finderButton');
 
-        const iframeFinder = document.createElement('iframe');
+finderButtons.forEach(button => {
+    button.addEventListener('click',  function toggleIframe() {
+        // Obtenemos el elemento iframe y el botón
+        var iframeFinder = document.getElementById('iframeShow');
 
-        iframeFinder.classList.add('iframeStyles');
-        iframeFinder.setAttribute("id", "iframeShow");
+        console.log(iframeFinder)
+        if (iframeFinder) {
+            appsOnDisplay.removeChild(iframeFinder);
+        } else {
 
-        iframeFinder.src = 'apps/apps.html'; // URL a mostrar
-        iframeFinder.width = '100%'; // Ancho completo del div
-        iframeFinder.height = '100%'; // Alto completo del div
-        iframeFinder.frameBorder = '0'; // Sin borde
-        iframeFinder.title = 'App Finder';
+            const iframeFinder = document.createElement('iframe');
 
-        appsOnDisplay.appendChild(iframeFinder);
+            iframeFinder.classList.add('iframeStyles');
+            iframeFinder.setAttribute("id", "iframeShow");
 
-    }
+            iframeFinder.src = 'apps/apps.html'; // URL a mostrar
+            iframeFinder.width = '100%'; // Ancho completo del div
+            iframeFinder.height = '100%'; // Alto completo del div
+            iframeFinder.frameBorder = '0'; // Sin borde
+            iframeFinder.title = 'App Finder';
 
+            appsOnDisplay.appendChild(iframeFinder);
+
+        }
+
+    });
 });
 
 // For the terminal
