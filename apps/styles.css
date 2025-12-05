@@ -1,6 +1,90 @@
 header{
-    width: 100px;
-    height: 100px;
-    text-align:center;
+    background-color: #f1F2F3;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-}..
+input[type="search"] {
+    flex-grow: 1;
+    padding:8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    }
+
+button:hover {
+    background-color: #e8eaed;
+}
+
+.logo-arriba{
+    height: 30px;
+    width: auto;
+    margin: 0 15px;
+    background-color: transparent;
+}
+
+.logo-abajo {
+    height: 300px;
+    width: 520px;
+    
+}
+
+/* Contenedor del menú */
+.menu-container {
+    position: relative;
+}
+
+/* El menú desplegable (oculto por defecto) */
+.menu-desplegable {
+    display: block;
+  position: relative;  /* Cambia de absolute a relative */
+  background-color: red;  /* Fondo rojo */
+  border: 10px solid blue;  /* Borde azul grueso */
+    min-width: 250px;
+  height: 200px;  /* Altura fija */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Cuando pasas el mouse, muestra el menú */
+.menu-container:hover .menu-desplegable {
+    display: block;
+}
+
+/* Estilos de cada item de lista */
+.menu-desplegable li {
+    margin: 0;
+}
+
+/* Estilos de cada enlace */
+.menu-desplegable a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Hover en cada opción */
+.menu-desplegable a:hover {
+    background-color: #f1f3f4;
+}
+
+
+
+
