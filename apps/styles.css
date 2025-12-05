@@ -25,6 +25,11 @@ button {
     font-size: 18px;
     }
 
+.first {
+    position: absolute;
+    left: 110.6rem;
+}
+
 button:hover {
     background-color: #e8eaed;
 }
@@ -42,48 +47,33 @@ button:hover {
     
 }
 
-/* Contenedor del menú */
-.menu-container {
+
+.menu-favorites {
     position: relative;
 }
 
-/* El menú desplegable (oculto por defecto) */
+
+
+.menu-favorites:hover .menu-desplegable {
+    display: block;
+}
+
 .menu-desplegable {
-    display: block;
-  position: relative;  /* Cambia de absolute a relative */
-  background-color: red;  /* Fondo rojo */
-  border: 10px solid blue;  /* Borde azul grueso */
+    display: none;
+    position:absolute;
+    top: 45px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 2);
     min-width: 250px;
-  height: 200px;  /* Altura fija */
+    z-index: 1000;
+    padding: 3;
+    margin: 0;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-
-/* Cuando pasas el mouse, muestra el menú */
-.menu-container:hover .menu-desplegable {
-    display: block;
-}
-
-/* Estilos de cada item de lista */
-.menu-desplegable li {
-    margin: 0;
-}
-
-/* Estilos de cada enlace */
-.menu-desplegable a {
-    display: block;
-    padding: 12px 20px;
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-}
-
-/* Hover en cada opción */
-.menu-desplegable a:hover {
-    background-color: #f1f3f4;
-}
 
 
 
