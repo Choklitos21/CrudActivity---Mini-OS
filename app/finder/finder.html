@@ -1,53 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="img/finder-icon.png">
     <meta charset="UTF-8">
-    <title>finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/finder-icon.png">
+    <title>Finder</title>
     <link rel="stylesheet" href="styles_finder.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-    <aside>
-        <div class="finder">
-            <div class="finder-header">
-                <img src="./" sizes="" alt="Finder Icon" class="finder-icon">
-                <span class="finder-title">Finder</span>
-            </div>
-            <div class="finder-search">
-                <input type="text" class="finder-search-input" placeholder="Search">
-                <img src="img/search-icon.png" alt="Search Icon" class="finder-search-icon">
-            </div>
-            <div class="finder-categories">
-                <div class="finder-category">
-                    <img src="img/recent-icon.png" alt="Recent Icon" class="finder-category-icon">
-                    <span class="finder-category-title">Recent</span>
+    <div class="finder-window">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🕐</span>
+                    <span>Recents</span>
                 </div>
-                <div class="finder-category">
-                    <img src="img/applications-icon.png" alt="Applications Icon" class="finder-category-icon">
-                    <span class="finder-category-title">Applications</span>
-                </div>
-                <div class="finder-category">
-                    <img src="img/desktop-icon.png" alt="Desktop Icon" class="finder-category-icon">
-                    <span class="finder-category-title">Desktop</span>
-                </div>
-                <div class="finder-category">
-                    <img src="img/documents-icon.png" alt="Documents Icon" class="finder-category-icon">
-                    <span class="finder-category-title">Documents</span>
-                </div>
-                <div class="finder-category">
-                    <img src="img/downloads-icon.png" alt="Downloads Icon" class="finder-category-icon">
-                    <span class="finder-category-title">Downloads</span>
-                </div>
-                <div class="finder-category">
-                    <img src="img/pictures-icon.png" alt="Pictures Icon" class="finder-category-icon">
-                    <span class="finder-category-title">Pictures</span>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">📁</span>
+                    <span>Shared</span>
                 </div>
             </div>
-        </div>
-    </aside>
+
+            <div class="sidebar-section-title">Favorites</div>
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">📱</span>
+                    <span>Applications</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">💻</span>
+                    <span>Desktop</span>
+                </div>
+                <div class="sidebar-item active">
+                    <span class="sidebar-item-icon">📄</span>
+                    <span>Documents</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">⬇️</span>
+                    <span>Downloads</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section-title">Locations</div>
+
+            <div class="sidebar-section-title">Tags</div>
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #ff3b30;"></span>
+                    <span>Urgent</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #ff9500;"></span>
+                    <span>Work</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #ffcc00;"></span>
+                    <span>Vacation</span>
+                </div>
+            </div>
+        </aside>
+    </div>
 </body>
 </html>
