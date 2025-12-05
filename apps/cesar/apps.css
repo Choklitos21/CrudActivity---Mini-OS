@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-style: normal;
+}
+/* ----------------------------------- */
+
+.contenedor-principal {
+    width: 55%;             
+    max-width: 900px;      
+    height: 630px;
+    margin: 5rem auto;       
+    border-radius: 20px;
+}
+
+.contenedor-principal_apps {
+    width: 100%;
+    height: 570px;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 45px;
+}
+.contenedor-encabezado_apps {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 4rem;
+    border-bottom: 1px solid rgb(154, 153, 153);
+}
+.contenedor-encabezado_apps h1 {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+/* -------------------------------------- */
+.contenedor-apps_usuario {
+    width: 100%;
+    height: 5rem;
+   border-bottom: 1px solid rgb(154, 153, 153);
+}
+.contenedor-apps_usuario .navbar {
+    width: 100%;
+}
+
+.contenedor-apps_usuario .navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.4rem; 
+    list-style: none;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+.contenedor-apps_usuario .navbar ul::-webkit-scrollbar {
+    display: none;
+}
+.contenedor-apps_usuario .navbar ul li {
+    background-color: #fff;
+    border-radius: 9px;
+    margin-right: 2rem;
+    padding: 0.3rem 1rem;
+}
+.contenedor-apps_usuario .navbar ul a {
+    text-decoration: none;
+    list-style: none;
+    color: #3d3c3ca2;
+}
+/*--------------------------------------------------  */
+
+ .contenedor-apps_descargadas {
+    width: 90%;
+    min-width: 800px;
+    margin: 0 auto;
+    border-radius: 2rem;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    max-height: 750px; 
+    overflow-y: auto;
+    overflow-x: hidden;  
+}
+
+.contenedor-apps_descargadas::-webkit-scrollbar {
+    width: 6px;                
+    background-color: transparent; 
+}
+.contenedor-apps_descargadas::-webkit-scrollbar-track {
+    background: transparent;
+}
+.contenedor-apps_descargadas::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.contenedor-apps_descargadas:hover::-webkit-scrollbar-thumb {
+    background-color: #555; 
+}
+.contenedor-apps_descargadas article:hover {
+    transform: scale(1.1);
+}
+
+.contenedor-apps_descargadas article {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+.contenedor-apps_descargadas img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.contenedor-apps_descargadas span {
+    display: block;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+

@@ -1,0 +1,330 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    filter: invert(100%);
+}
+
+/*----------------------------------------------Statusbar------------------------------------------*/
+
+.statusBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    font-size: 0.8rem;
+
+    background-color: rgba(108, 108, 108, 0.96);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.84);
+}
+
+.statusBar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.statusBar div * {
+    padding: 0 2px;
+}
+
+.statusBar div:first-child {
+    margin-left: 10px;
+}
+
+.statusBar div:last-child {
+    margin-right: 10px;
+}
+
+.statusBar a {
+    color: white;
+    text-decoration: unset;
+}
+
+.statusBar img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/*---------------------------------------Desktop---------------------------------------------*/
+
+.desktop {
+    width: 100%;
+    height: 100%;
+    background-image: url("media/images/wallhaven-8g5p52_1920x1080.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.desktop button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: unset;
+    color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 0;
+    background-color: unset;
+    cursor: pointer;
+}
+
+.desktop button:first-child {
+    background-image: url("media/images/finder.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    right: 45rem;
+    top: 10rem;
+}
+
+.desktop button:nth-child(1)::after {
+    content: "Finder"; /* Usa ::after para que aparezca debajo */
+    display: block; /* Asegura que el texto esté en una nueva línea */
+    margin-top: 45px;
+    color: black;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.desktop button:nth-child(2) {
+    background-image: url("media/images/safari.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    right: 63rem;
+    top: 20rem;
+}
+
+.desktop button:nth-child(2)::after {
+    content: "Safari"; /* Usa ::after para que aparezca debajo */
+    display: block; /* Asegura que el texto esté en una nueva línea */
+    margin-top: 45px; /* Añade un poco de espacio entre el div y el texto */
+    color: black;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.desktop button:nth-child(3) {
+    background-image: url("media/images/calculator.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    right: 26rem;
+    top: 20rem;
+}
+
+.desktop button:nth-child(3)::after {
+    content: "Calculator"; /* Usa ::after para que aparezca debajo */
+    display: block; /* Asegura que el texto esté en una nueva línea */
+    margin-top: 45px; /* Añade un poco de espacio entre el div y el texto */
+    color: black;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.desktop button:nth-child(4) {
+    background-image: url("media/images/folder.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    right: 80rem;
+    top: 4rem;
+}
+
+.desktop button:nth-child(4)::after {
+    content: "Documents"; /* Usa ::after para que aparezca debajo */
+    display: block; /* Asegura que el texto esté en una nueva línea */
+    margin-top: 45px; /* Añade un poco de espacio entre el div y el texto */
+    color: black;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.desktop button:nth-child(5) {
+    background-image: url("media/images/folder.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    right: 90rem;
+    top: 10rem;
+}
+
+.desktop button:nth-child(5)::after {
+    content: "Wallpapers"; /* Usa ::after para que aparezca debajo */
+    display: block; /* Asegura que el texto esté en una nueva línea */
+    margin-top: 45px; /* Añade un poco de espacio entre el div y el texto */
+    color: black;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/*----------------------------------------Taskbar------------------------------------*/
+
+.taskBar {
+    width: auto;
+    height: 60px;
+    position: fixed;
+    top: 90vh;
+    z-index: 1000;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 11px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.taskBar button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: unset;
+    color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 0;
+    background-color: unset;
+
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.taskBar button:hover {
+    transform: scale(1.1) translateY(-10px);
+}
+
+.taskBar button:first-child {
+    background-image: url("media/images/finder.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.taskBar button:nth-child(2) {
+    background-image: url("media/images/safari.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(3) {
+    background-image: url("media/icons-apps/fotos.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(4) {
+    background-image: url("media/icons-apps/musica.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(5) {
+    background-image: url("media/images/calculator.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(6) {
+    background-image: url("media/icons-apps/terminal_icon.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(7) {
+    background-image: url("media/images/settings.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(9) {
+    background-image: url("media/icons-apps/youtube.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.taskBar button:nth-child(10) {
+    background-image: url("media/images/weather.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.taskBar span {
+    color: rgba(255, 255, 255, 0.3);
+    height: 129%;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+
+.iframeStyles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.iframeStyles ::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll */
+}
