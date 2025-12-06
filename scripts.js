@@ -103,7 +103,7 @@ terminal.addEventListener('click',  function toggleIframe() {
         iframeTerminal.classList.add('iframeStyles');
         iframeTerminal.setAttribute("id", "terminalShow");
 
-        iframeTerminal.src = 'https://google.com';
+        iframeTerminal.src = 'apps/cesar/terminal.html';
         iframeTerminal.width = '100%';
         iframeTerminal.height = '100%';
         iframeTerminal.frameBorder = '0';
