@@ -240,3 +240,97 @@ body {
 .tab-add:hover {
     background: #e5e5e7;
 }
+.file-grid {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+    align-content: start;
+}
+
+.file-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.file-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.file-grid::-webkit-scrollbar-thumb {
+    background: #d1d1d6;
+    border-radius: 4px;
+}
+
+.file-grid::-webkit-scrollbar-thumb:hover {
+    background: #b8b8bd;
+}
+
+/* Items de archivos */
+.file-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.15s ease;
+    user-select: none;
+}
+
+.file-item:hover {
+    background: #f5f5f7;
+}
+
+.file-item.selected {
+    background: #e5e5e7;
+}
+
+.file-thumbnail {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.file-item:hover .file-thumbnail {
+    transform: scale(1.05);
+}
+
+.file-name {
+    font-size: 12px;
+    text-align: center;
+    color: #1d1d1f;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: 120px;
+    word-wrap: break-word;
+}
+
+.file-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-green {
+    background: #34c759;
+}
+
+.status-gray {
+    background: #8e8e93;
+}
+
+.status-yellow {
+    background: #ffcc00;
+}
