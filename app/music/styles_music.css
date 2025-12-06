@@ -72,3 +72,96 @@ body {
     align-items: center;
     justify-content: center;
 }
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    overflow: hidden;
+}
+.toolbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fafafa;
+    min-height: 52px;
+}
+
+.traffic-lights {
+    display: flex;
+    gap: 8px;
+    margin-right: 20px;
+}
+
+.traffic-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.traffic-light:hover {
+    opacity: 0.8;
+}
+
+.traffic-light.red { background: #ff5f56; }
+.traffic-light.yellow { background: #ffbd2e; }
+.traffic-light.green { background: #27c93f; }
+
+.nav-buttons {
+    display: flex;
+    gap: 6px;
+    margin-right: 20px;
+}
+
+.nav-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid #d1d1d6;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6e6e73;
+    transition: all 0.15s ease;
+}
+
+.nav-button:hover {
+    background: #f5f5f7;
+    border-color: #b8b8bd;
+}
+
+.toolbar-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d1d1f;
+    flex: 1;
+}
+
+.toolbar-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.toolbar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #6e6e73;
+    transition: color 0.15s ease;
+}
+
+.toolbar-button:hover {
+    color: #1d1d1f;
+}
