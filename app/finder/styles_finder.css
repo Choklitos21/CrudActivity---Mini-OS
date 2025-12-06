@@ -190,3 +190,53 @@ body {
 .toolbar-button:hover {
     color: #1d1d1f;
 }
+.tabs {
+    display: flex;
+    gap: 8px;
+    padding: 12px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.tab {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #e5e5e7;
+    font-size: 13px;
+    color: #6e6e73;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.tab:hover {
+    background: #d1d1d6;
+}
+
+.tab.active {
+    background: white;
+    color: #1d1d1f;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tab-add {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #6e6e73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease;
+}
+
+.tab-add:hover {
+    background: #e5e5e7;
+}
