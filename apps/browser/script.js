@@ -5,9 +5,6 @@ botonRecargar.addEventListener('click', function () {
     location.reload();
 });
 
-
-
-
 const paginasPredeterminadas = [
     { nombre: 'YouTube', url: 'https://youtube.com', favicon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=128' },
     { nombre: 'Gmail', url: 'https://gmail.com', favicon: 'https://www.google.com/s2/favicons?domain=gmail.com&sz=128' },

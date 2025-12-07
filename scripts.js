@@ -150,3 +150,35 @@ musicButtons.forEach(button => {
     });
 })
 
+// For the browser
+const browserButtons = document.querySelectorAll('.browserButton');
+
+browserButtons.forEach(button => {
+    button.addEventListener('click', function toggleIframe() {
+        // Obtenemos el elemento iframe y el botón
+        var iframeTerminal = document.getElementById('browserShow');
+
+        console.log(iframeTerminal)
+        if (iframeTerminal) {
+            appsOnDisplay.removeChild(iframeTerminal);
+        } else {
+
+            const iframeTerminal = document.createElement('iframe');
+
+            iframeTerminal.classList.add('iframeStylesMax');
+            iframeTerminal.setAttribute("id", "browserShow");
+
+            iframeTerminal.src = 'apps/browser/browser.html';
+            iframeTerminal.width = '100%';
+            iframeTerminal.height = '100%';
+            iframeTerminal.frameBorder = '0';
+            iframeTerminal.title = 'App browser';
+
+            appsOnDisplay.appendChild(iframeTerminal);
+
+        }
+
+    });
+})
+
+
