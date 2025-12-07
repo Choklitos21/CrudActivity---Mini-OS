@@ -13,7 +13,7 @@ body {
 
 .music-window {
     display: flex;
-    height: 100vh;
+    height: 90%;
     background: white;
     overflow: hidden;
 }
