@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/music-icon.png">
+    <title>Music</title>
+    <link rel="stylesheet" href="styles_music.css">
+</head>
+<body>
+    <div class="music-window">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🔍</span>
+                    <span>Buscar</span>
+                </div>
+                <div class="sidebar-item active">
+                    <span class="sidebar-item-icon">🏠</span>
+                    <span>Inicio</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">📻</span>
+                    <span>Radio</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section-title">Biblioteca</div>
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">⭐</span>
+                    <span>Para ti</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🕐</span>
+                    <span>Añadidos recientemente</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🎤</span>
+                    <span>Artistas</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">💿</span>
+                    <span>Álbumes</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🎵</span>
+                    <span>Canciones</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section-title">Listas</div>
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">📝</span>
+                    <span>Mis Favoritas</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🎸</span>
+                    <span>Rock Clásico</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🎹</span>
+                    <span>Electrónica</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <div class="traffic-lights">
+                    <div class="traffic-light red"></div>
+                    <div class="traffic-light yellow"></div>
+                    <div class="traffic-light green"></div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="nav-button">‹</button>
+                    <button class="nav-button">›</button>
+                </div>
+                <div class="toolbar-title">Inicio</div>
+                <div class="toolbar-actions">
+                    <button class="toolbar-button" title="Buscar">🔍</button>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <div class="section">
+                    <h2 class="section-title">Selecciones Para Ti</h2>
+                    <div class="albums-grid">
+
+                        <div class="album-card" data-song='{"title": "505", "artist": "Arctic Monkeys", "duration": "4:13", "file": "music/505.mp3"}'>
+                            <div class="album-cover">
+                                <img src="img/505.jpeg" alt="Arctic Monkeys">
+                            </div>
+                            <div class="album-info">
+                                <div class="album-title">505</div>
+                                <div class="album-artist">Arctic Monkeys</div>
+                            </div>
+                        </div>
+
+                        <div class="album-card" data-song='{"title": "Everlong", "artist": "Foo Fighters", "duration": "4:10", "file": "music/Everlong.mp3"}'>
+                            <div class="album-cover">
+                                <img src="img/everlong.jpeg" alt="Foo Fighters">
+                            </div>
+                            <div class="album-info">
+                                <div class="album-title">Everlong</div>
+                                <div class="album-artist">Foo Fighters</div>
+                            </div>
+                        </div>
+
+                        <div class="album-card" data-song='{"title": "PIXELATED KISSES", "artist": "joji", "duration": "1:51", "file": "music/PIXELATED KISSES.mp3"}'>
+                            <div class="album-cover">
+                                <img src="img/pixelated_kisses.jpeg" alt="Future">
+                            </div>
+                            <div class="album-info">
+                                <div class="album-title">PIXELATED KISSES</div>
+                                <div class="album-artist">JOJI</div>
+                            </div>
+                        </div>
+
+                        <!-- Gesaffelstein -->
+                        <div class="album-card" data-song='{"title": "Afther Dark", "artist": "Mr.Kitty", "duration": "4:18", "file": "music/After Dark.mp3"}'>
+                            <div class="album-cover">
+                                <img src="img/after_dark.jpeg" alt="Gesaffelstein">
+                            </div>
+                            <div class="album-info">
+                                <div class="album-title">After Dark</div>
+                                <div class="album-artist">Mr.Kitty</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Reproducidos Recientemente</h2>
+                    <div class="recent-grid">
+                        
+                        <div class="recent-card" data-song='{"title": "Given up", "artist": "Linkin Park", "duration": "3:10", "file": "music/Given Up.mp3"}'>
+                            <div class="recent-cover">
+                                <img src="img/given_up.jpeg" alt="Linkin Park">
+                            </div>
+                            <div class="recent-title">Given Up</div>
+                        </div>
+
+                        <div class="recent-card" data-song='{"title": "Desire", "artist": "Meg Myers", "duration": "4:44", "file": "music/Desire.mp3"}'>
+                            <div class="recent-cover">
+                                <img src="img/desire.jpeg" alt="Meg Myers">
+                            </div>
+                            <div class="recent-title">Desire</div>
+                        </div>
+
+                        <div class="recent-card" data-song='{"title": "TU VAS SIN", "artist": "Rels b", "duration": "1:51", "file": "music/TU VAS SIN.mp3"}'>
+                            <div class="recent-cover">
+                                <img src="img/tu_vas_sin.jpeg" alt="Rels b">
+                            </div>
+                            <div class="recent-title">TU VAS SIN</div>
+                        </div>
+
+                        <div class="recent-card" data-song='{"title": "FE!N", "artist": "Travis Scott", "duration": "3:48", "file": "music/FE!N.mp3"}'>
+                            <div class="recent-cover">
+                                <img src="img/fein.jpeg" alt="Travis Scott">
+                            </div>
+                            <div class="recent-title">FE!N</div>
+                        </div>
+
+                        <div class="recent-card" data-song='{"title": "Nothing personal", "artist": "Des rocs", "duration": "4:15", "file": "music/Nothing personal.mp3"}'>
+                            <div class="recent-cover">
+                                <img src="img/nothing_personal.jpeg" alt="Des rocs">
+                            </div>
+                            <div class="recent-title">Nothing personal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="player-left">
+                    <div class="now-playing-cover">
+                        <span class="now-playing-emoji">🎵</span>
+                    </div>
+                    <div class="now-playing-info">
+                        <div class="now-playing-title">Selecciona una canción</div>
+                        <div class="now-playing-artist">Artista</div>
+                    </div>
+                </div>
+
+                <div class="player-center">
+                    <div class="player-controls">
+                        <button class="control-button" id="shuffle">🔀</button>
+                        <button class="control-button" id="prev">⏮</button>
+                        <button class="control-button play-button" id="playPause">▶️</button>
+                        <button class="control-button" id="next">⏭</button>
+                        <button class="control-button" id="repeat">🔁</button>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="time-current">0:00</span>
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="time-total">0:00</span>
+                    </div>
+                </div>
+
+                <div class="player-right">
+                    <button class="control-button">🎵</button>
+                    <button class="control-button">🔊</button>
+                    <div class="volume-slider">
+                        <div class="volume-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <audio id="audioPlayer"></audio>
+        </main>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>
