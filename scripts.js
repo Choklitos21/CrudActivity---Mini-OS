@@ -1,6 +1,5 @@
 
-// const finder = document.getElementById('finder');
-const terminal = document.getElementById('terminal');
+
 const app3 = document.getElementById('miBoton');
 
 const appsOnDisplay = document.getElementById('appsDisplay');
@@ -30,33 +29,6 @@ function updateClock() {
 }
 updateClock();
 setInterval(updateClock, 1000);
-
-// For finder
-// finder.addEventListener('click',  function toggleIframe() {
-//     // Obtenemos el elemento iframe y el botón
-//     var iframeFinder = document.getElementById('iframeShow');
-//
-//     console.log(iframeFinder)
-//     if (iframeFinder) {
-//         appsOnDisplay.removeChild(iframeFinder);
-//     } else {
-//
-//         const iframeFinder = document.createElement('iframe');
-//
-//         iframeFinder.classList.add('iframeStyles');
-//         iframeFinder.setAttribute("id", "iframeShow");
-//
-//         iframeFinder.src = 'apps/apps.html'; // URL a mostrar
-//         iframeFinder.width = '100%'; // Ancho completo del div
-//         iframeFinder.height = '100%'; // Alto completo del div
-//         iframeFinder.frameBorder = '0'; // Sin borde
-//         iframeFinder.title = 'App Finder';
-//
-//         appsOnDisplay.appendChild(iframeFinder);
-//
-//     }
-//
-// });
 
 const finderButtons = document.querySelectorAll('.finderButton');
 
@@ -89,28 +61,32 @@ finderButtons.forEach(button => {
 });
 
 // For the terminal
-terminal.addEventListener('click',  function toggleIframe() {
-    // Obtenemos el elemento iframe y el botón
-    var iframeTerminal = document.getElementById('terminalShow');
+const terminalButtons = document.querySelectorAll('.terminalButton');
 
-    console.log(iframeTerminal)
-    if (iframeTerminal) {
-        appsOnDisplay.removeChild(iframeTerminal);
-    } else {
+terminalButtons.forEach(button => {
+    button.addEventListener('click', function toggleIframe() {
+        // Obtenemos el elemento iframe y el botón
+        var iframeTerminal = document.getElementById('terminalShow');
 
-        const iframeTerminal = document.createElement('iframe');
+        console.log(iframeTerminal)
+        if (iframeTerminal) {
+            appsOnDisplay.removeChild(iframeTerminal);
+        } else {
 
-        iframeTerminal.classList.add('iframeStyles');
-        iframeTerminal.setAttribute("id", "terminalShow");
+            const iframeTerminal = document.createElement('iframe');
 
-        iframeTerminal.src = 'apps/cesar/terminal.html';
-        iframeTerminal.width = '100%';
-        iframeTerminal.height = '100%';
-        iframeTerminal.frameBorder = '0';
-        iframeTerminal.title = 'App Terminal';
+            iframeTerminal.classList.add('iframeStyles');
+            iframeTerminal.setAttribute("id", "terminalShow");
 
-        appsOnDisplay.appendChild(iframeTerminal);
+            iframeTerminal.src = 'apps/cesar/terminal.html';
+            iframeTerminal.width = '100%';
+            iframeTerminal.height = '100%';
+            iframeTerminal.frameBorder = '0';
+            iframeTerminal.title = 'App Terminal';
 
-    }
+            appsOnDisplay.appendChild(iframeTerminal);
 
-});
+        }
+
+    });
+})
