@@ -137,7 +137,7 @@ img {
 }
 
 .desktop button:nth-child(3) {
-    background-image: url("media/images/calculator.png");
+    background-image: url("media/icons-apps/musica.png");
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -148,7 +148,7 @@ img {
 }
 
 .desktop button:nth-child(3)::after {
-    content: "Calculator"; /* Usa ::after para que aparezca debajo */
+    content: "Music"; /* Usa ::after para que aparezca debajo */
     display: block; /* Asegura que el texto esté en una nueva línea */
     margin-top: 45px; /* Añade un poco de espacio entre el div y el texto */
     color: black;
@@ -191,7 +191,7 @@ img {
     background-position: center;
 
     position: absolute;
-    right: 90rem;
+    right: 70rem;
     top: 10rem;
 }
 
@@ -252,7 +252,7 @@ img {
 }
 
 .taskBar button:first-child {
-    background-image: url("media/images/finder.png");
+    background-image: url("media/icons-apps/apps.png");
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -277,7 +277,7 @@ img {
     background-position: center;
 }
 .taskBar button:nth-child(5) {
-    background-image: url("media/images/calculator.png");
+    background-image: url("media/images/finder.png");
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -322,7 +322,15 @@ img {
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
 
+.iframeStylesMax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    overflow: hidden;
 }
 
 .iframeStyles ::-webkit-scrollbar {

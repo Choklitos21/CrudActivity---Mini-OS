@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f5f5f7;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Contenedor principal del Finder */
+.finder-window {
+    display: flex;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 220px;
+    background: #f5f5f7;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    overflow-y: auto;
+}
+
+.sidebar-section {
+    padding: 8px 12px;
+}
+
+.sidebar-section-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: #86868b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 12px 4px;
+    margin-top: 8px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    margin: 2px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    font-size: 13px;
+    color: #1d1d1f;
+    user-select: none;
+}
+
+.sidebar-item:hover {
+    background: #e5e5e7;
+}
+
+.sidebar-item.active {
+    background: #007aff;
+    color: white;
+}
+
+.sidebar-item-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    overflow: hidden;
+}
+.toolbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fafafa;
+    min-height: 52px;
+}
+
+.traffic-lights {
+    display: flex;
+    gap: 8px;
+    margin-right: 20px;
+}
+
+.traffic-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.traffic-light:hover {
+    opacity: 0.8;
+}
+
+.traffic-light.red {
+    background: #ff5f56;
+}
+
+.traffic-light.yellow {
+    background: #ffbd2e;
+}
+
+.traffic-light.green {
+    background: #27c93f;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 6px;
+    margin-right: 20px;
+}
+
+.nav-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid #d1d1d6;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6e6e73;
+    transition: all 0.15s ease;
+}
+
+.nav-button:hover {
+    background: #f5f5f7;
+    border-color: #b8b8bd;
+}
+
+.nav-button:active {
+    background: #e5e5e7;
+}
+
+.toolbar-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d1d1f;
+    flex: 1;
+}
+
+.toolbar-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.toolbar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 20px;
+    color: #6e6e73;
+    transition: color 0.15s ease;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.toolbar-button:hover {
+    color: #1d1d1f;
+}
+.tabs {
+    display: flex;
+    gap: 8px;
+    padding: 12px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.tab {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #e5e5e7;
+    font-size: 13px;
+    color: #6e6e73;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.tab:hover {
+    background: #d1d1d6;
+}
+
+.tab.active {
+    background: white;
+    color: #1d1d1f;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tab-add {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #6e6e73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease;
+}
+
+.tab-add:hover {
+    background: #e5e5e7;
+}
+.file-grid {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+    align-content: start;
+}
+
+.file-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.file-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.file-grid::-webkit-scrollbar-thumb {
+    background: #d1d1d6;
+    border-radius: 4px;
+}
+
+.file-grid::-webkit-scrollbar-thumb:hover {
+    background: #b8b8bd;
+}
+
+/* Items de archivos */
+.file-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.15s ease;
+    user-select: none;
+}
+
+.file-item:hover {
+    background: #f5f5f7;
+}
+
+.file-item.selected {
+    background: #e5e5e7;
+}
+
+.file-thumbnail {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.file-item:hover .file-thumbnail {
+    transform: scale(1.05);
+}
+
+.file-name {
+    font-size: 12px;
+    text-align: center;
+    color: #1d1d1f;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: 120px;
+    word-wrap: break-word;
+}
+
+.file-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-green {
+    background: #34c759;
+}
+
+.status-gray {
+    background: #8e8e93;
+}
+
+.status-yellow {
+    background: #ffcc00;
+}

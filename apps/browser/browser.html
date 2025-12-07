@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button>←</button>
+            <button>→</button>
+            <button>ⓘ</button>
+            <button id="btn-recargar">⟳</button>
+        </nav>
+
+        <input type="search" placeholder="Buscar en Google o escribir una URL">
+
+        <nav class="menu-favorites">
+            <button>⭐</button>
+            <ol class="menu-desplegable">
+                <li>Añadir esta pagina a favoritos</li>
+                <li>Gestionar favoritos</li>
+                <li>Mostrar barra de favoritos</li>
+            </ol>
+        </nav>
+
+        <nav class="menu-user">
+            <button>👤</button>
+            <ol class="menu-users">
+                <li>Iniciar sesión en Chrome</li>
+                <li>Contraseñas y autocompletar</li>
+                <li>Personalizar perfil</li>
+                <li>Añadir perfil de Chrome</li>
+                <li>Perfil de invitado abierto</li>
+                <li>Gestionar perfiles de Chrome</li>
+            </ol>
+        </nav>
+
+        <nav class="menu-option">
+            <button>⋮</button>
+            <ol class="menu-options">
+                <li>Nueva pestaña</li>
+                <li>Nueva ventana</li>
+                <li>Nueva ventana de incognito</li>
+                <li>Persona 0</li>
+                <li>Contraseñas y autocompletar</li>
+                <li>Historial</li>
+                <li>Descargas</li>
+                <li>Marcadores y listas</li>
+                <li>Grupos de pestañas</li>
+                <li>Extensiones</li>
+                <li>Eliminar datos de navegación...</li>
+                <li>Zoom</li>
+                <li>Imprimir</li>
+                <li>Buscar con Google Lens</li>
+                <li>Traducir</li>
+                <li>Buscar y editar</li>
+                <li>Enviar, guardar y compartir</li>
+                <li>Mas herramientas</li>
+                <li>>Ayuda</li>
+                <li>Configuracion</li>
+                <li>Salir</li>
+            </ol>
+        </nav>
+    </header>
+
+    <section class="logo-central">
+        <img src="../../media/images/Google.png" alt="Logo Google" class="logo-abajo">
+    </section>
+
+    <section class="contenedor-lupa">
+        <img src="../media/Images/simbolo-de-la-interfaz-de-busqueda.png" alt="Buscar">
+        <input type="text" placeholder="Buscar en Google o escribir una URL">
+    </section>
+
+    <section class="paginas-recientes">
+        <header class="titulo-recientes">
+            <h3>Accesos directos</h3>
+            <button class="btn-personalizar" onclick="toggleEditMode()">Personalizar</button>
+        </header>
+        <div id="gridRecientes" class="grid-recientes"></div>
+    </section>
+
+    <dialog class="modal" id="modalAgregar">
+        <h2>Agregar acceso directo</h2>
+        <input type="text" id="inputNombre" placeholder="Nombre">
+        <input type="url" id="inputUrl" placeholder="URL (https://...)">
+        <nav class="modal-buttons">
+            <button class="btn-modal btn-cancelar" onclick="cerrarModal()">Cancelar</button>
+            <button class="btn-modal btn-guardar" onclick="guardarPagina()">Guardar</button>
+        </nav>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

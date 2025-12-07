@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/finder-icon.png">
+    <title>Finder</title>
+    <link rel="stylesheet" href="styles_finder.css">
+</head>
+<body>
+    <div class="finder-window">
+    <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">🕐</span>
+                    <span>Recientes</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">📁</span>
+                    <span>Compartidos</span>
+                </div>
+            </div>
+        <div class="sidebar-section-title">Favoritos</div>
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">📱</span>
+                    <span>Aplicaciones</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">💻</span>
+                    <span>Escritorio</span>
+                </div>
+                <div class="sidebar-item active">
+                    <span class="sidebar-item-icon">📄</span>
+                    <span>Documentos</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="sidebar-item-icon">⬇️</span>
+                    <span>Descargas</span>
+                </div>
+        </div>
+
+        <div class="sidebar-section-title">Ubicaciones</div>
+
+            <div class="sidebar-section-title">Etiquetas</div>
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #ff3b30;"></span>
+                    <span>Importante</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #ff9500;"></span>
+                    <span>Trabajos</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #09ff00;"></span>
+                    <span>Recuerdos familiares</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #005eff;"></span>
+                    <span>Ejemplos</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="tag-dot" style="background: #fff700;"></span>
+                    <span>Examen</span>
+                </div>
+        </div>
+    </aside>
+    <main class="main-content">
+    <div class="toolbar">
+            <div class="traffic-lights">
+                    <div class="traffic-light red"></div>
+                    <div class="traffic-light yellow"></div>
+                    <div class="traffic-light green"></div>
+            </div>
+                <div class="nav-buttons">
+                    <button class="nav-button">‹</button>
+                    <button class="nav-button">›</button>
+                </div>
+            <div class="toolbar-title">Documentos</div>
+            <div class="toolbar-actions">
+                    <button class="toolbar-button" title="Vista de cuadrícula">⊞</button>
+                    <button class="toolbar-button" title="Vista de lista">⋮</button>
+                    <button class="toolbar-button" title="Compartir">↑</button>
+                    <button class="toolbar-button" title="Etiquetas">🏷️</button>
+                    <button class="toolbar-button" title="Más">⋯</button>
+                    <button class="toolbar-button" title="Buscar">🔍</button>
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tab">Inicio</div>
+            <div class="tab">Inicio</div>
+            <div class="tab">Inicio</div>
+            <div class="tab active">Documentos</div>
+            <button class="tab-add" title="Nueva pestaña">+</button>
+        </div>
+        <div class="file-grid">
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: white;">📄</div>
+                    <div class="file-name">
+                        <span class="file-status status-green"></span>
+                        Acuerdo de Servicios
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🎨</div>
+                    <div class="file-name">
+                        <span class="file-status status-green"></span>
+                        Todos los cuerpos — Todas las habilidades
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">📰</div>
+                    <div class="file-name">
+                        <span class="file-status status-green"></span>
+                        Envío a Revista Azolla
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: #1a1a1a;">📖</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Biofactura
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">🎉</div>
+                    <div class="file-name">
+                        <span class="file-status status-green"></span>
+                        Fiesta de Bloque
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">🍓</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Fruta
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">📸</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Recuerdos divertidos
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">👋</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Hola amigo
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #ff6b6b 0%, #c92a2a 100%);">💃</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Inspiración 1
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: #2c2c2c;">🖤</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Inspiración 2
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">🎭</div>
+                    <div class="file-name">
+                        <span class="file-status status-green"></span>
+                        Catálogo Textil Mexicano
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: #d4f4dd;">📋</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Formulario de pedido
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);">🥗</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Sesión de fotos picnic
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">🏠</div>
+                    <div class="file-name">
+                        <span class="file-status status-green"></span>
+                        Planificación de remodelación
+                    </div>
+                </div>
+                <div class="file-item">
+                    <div class="file-thumbnail" style="background: #f5f5f5;">📦</div>
+                    <div class="file-name">
+                        <span class="file-status status-gray"></span>
+                        Entregables Ronda Uno
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

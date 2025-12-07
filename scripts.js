@@ -1,8 +1,4 @@
 
-// const finder = document.getElementById('finder');
-const terminal = document.getElementById('terminal');
-const app3 = document.getElementById('miBoton');
-
 const appsOnDisplay = document.getElementById('appsDisplay');
 
 // Show current time and date
@@ -31,39 +27,12 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
-// For finder
-// finder.addEventListener('click',  function toggleIframe() {
-//     // Obtenemos el elemento iframe y el botón
-//     var iframeFinder = document.getElementById('iframeShow');
-//
-//     console.log(iframeFinder)
-//     if (iframeFinder) {
-//         appsOnDisplay.removeChild(iframeFinder);
-//     } else {
-//
-//         const iframeFinder = document.createElement('iframe');
-//
-//         iframeFinder.classList.add('iframeStyles');
-//         iframeFinder.setAttribute("id", "iframeShow");
-//
-//         iframeFinder.src = 'apps/apps.html'; // URL a mostrar
-//         iframeFinder.width = '100%'; // Ancho completo del div
-//         iframeFinder.height = '100%'; // Alto completo del div
-//         iframeFinder.frameBorder = '0'; // Sin borde
-//         iframeFinder.title = 'App Finder';
-//
-//         appsOnDisplay.appendChild(iframeFinder);
-//
-//     }
-//
-// });
+const appsButtons = document.querySelectorAll('.appsButton');
 
-const finderButtons = document.querySelectorAll('.finderButton');
-
-finderButtons.forEach(button => {
+appsButtons.forEach(button => {
     button.addEventListener('click',  function toggleIframe() {
         // Obtenemos el elemento iframe y el botón
-        var iframeFinder = document.getElementById('iframeShow');
+        var iframeFinder = document.getElementById('appsShow');
 
         console.log(iframeFinder)
         if (iframeFinder) {
@@ -73,13 +42,13 @@ finderButtons.forEach(button => {
             const iframeFinder = document.createElement('iframe');
 
             iframeFinder.classList.add('iframeStyles');
-            iframeFinder.setAttribute("id", "iframeShow");
+            iframeFinder.setAttribute("id", "appsShow");
 
             iframeFinder.src = 'apps/cesar/apps.html'; // URL a mostrar
             iframeFinder.width = '100%'; // Ancho completo del div
             iframeFinder.height = '100%'; // Alto completo del div
             iframeFinder.frameBorder = '0'; // Sin borde
-            iframeFinder.title = 'App Finder';
+            iframeFinder.title = 'Apps';
 
             appsOnDisplay.appendChild(iframeFinder);
 
@@ -89,28 +58,127 @@ finderButtons.forEach(button => {
 });
 
 // For the terminal
-terminal.addEventListener('click',  function toggleIframe() {
-    // Obtenemos el elemento iframe y el botón
-    var iframeTerminal = document.getElementById('terminalShow');
+const terminalButtons = document.querySelectorAll('.terminalButton');
 
-    console.log(iframeTerminal)
-    if (iframeTerminal) {
-        appsOnDisplay.removeChild(iframeTerminal);
-    } else {
+terminalButtons.forEach(button => {
+    button.addEventListener('click', function toggleIframe() {
+        // Obtenemos el elemento iframe y el botón
+        var iframeTerminal = document.getElementById('terminalShow');
 
-        const iframeTerminal = document.createElement('iframe');
+        console.log(iframeTerminal)
+        if (iframeTerminal) {
+            appsOnDisplay.removeChild(iframeTerminal);
+        } else {
 
-        iframeTerminal.classList.add('iframeStyles');
-        iframeTerminal.setAttribute("id", "terminalShow");
+            const iframeTerminal = document.createElement('iframe');
 
-        iframeTerminal.src = 'https://google.com';
-        iframeTerminal.width = '100%';
-        iframeTerminal.height = '100%';
-        iframeTerminal.frameBorder = '0';
-        iframeTerminal.title = 'App Terminal';
+            iframeTerminal.classList.add('iframeStyles');
+            iframeTerminal.setAttribute("id", "terminalShow");
 
-        appsOnDisplay.appendChild(iframeTerminal);
+            iframeTerminal.src = 'apps/cesar/terminal.html';
+            iframeTerminal.width = '100%';
+            iframeTerminal.height = '100%';
+            iframeTerminal.frameBorder = '0';
+            iframeTerminal.title = 'App Terminal';
 
-    }
+            appsOnDisplay.appendChild(iframeTerminal);
 
-});
+        }
+
+    });
+})
+
+// For the finder
+const finderButtons = document.querySelectorAll('.finderButton');
+
+finderButtons.forEach(button => {
+    button.addEventListener('click', function toggleIframe() {
+        // Obtenemos el elemento iframe y el botón
+        var iframeTerminal = document.getElementById('finderShow');
+
+        console.log(iframeTerminal)
+        if (iframeTerminal) {
+            appsOnDisplay.removeChild(iframeTerminal);
+        } else {
+
+            const iframeTerminal = document.createElement('iframe');
+
+            iframeTerminal.classList.add('iframeStylesMax');
+            iframeTerminal.setAttribute("id", "finderShow");
+
+            iframeTerminal.src = 'apps/finder/finder.html';
+            iframeTerminal.width = '100%';
+            iframeTerminal.height = '100%';
+            iframeTerminal.frameBorder = '0';
+            iframeTerminal.title = 'App Finder';
+
+            appsOnDisplay.appendChild(iframeTerminal);
+
+        }
+
+    });
+})
+
+// For the music
+const musicButtons = document.querySelectorAll('.musicButton');
+
+musicButtons.forEach(button => {
+    button.addEventListener('click', function toggleIframe() {
+        // Obtenemos el elemento iframe y el botón
+        var iframeTerminal = document.getElementById('musicShow');
+
+        console.log(iframeTerminal)
+        if (iframeTerminal) {
+            appsOnDisplay.removeChild(iframeTerminal);
+        } else {
+
+            const iframeTerminal = document.createElement('iframe');
+
+            iframeTerminal.classList.add('iframeStylesMax');
+            iframeTerminal.setAttribute("id", "musicShow");
+
+            iframeTerminal.src = 'apps/music/music.html';
+            iframeTerminal.width = '100%';
+            iframeTerminal.height = '100%';
+            iframeTerminal.frameBorder = '0';
+            iframeTerminal.title = 'App Music';
+
+            appsOnDisplay.appendChild(iframeTerminal);
+
+        }
+
+    });
+})
+
+// For the browser
+const browserButtons = document.querySelectorAll('.browserButton');
+
+browserButtons.forEach(button => {
+    button.addEventListener('click', function toggleIframe() {
+        // Obtenemos el elemento iframe y el botón
+        var iframeTerminal = document.getElementById('browserShow');
+
+        console.log(iframeTerminal)
+        if (iframeTerminal) {
+            appsOnDisplay.removeChild(iframeTerminal);
+        } else {
+
+            const iframeTerminal = document.createElement('iframe');
+
+            iframeTerminal.classList.add('iframeStylesMax');
+            iframeTerminal.setAttribute("id", "browserShow");
+
+            iframeTerminal.src = 'apps/browser/browser.html';
+            iframeTerminal.width = '100%';
+            iframeTerminal.height = '100%';
+            iframeTerminal.frameBorder = '0';
+            iframeTerminal.title = 'App browser';
+
+            appsOnDisplay.appendChild(iframeTerminal);
+
+        }
+
+    });
+})
+
+
