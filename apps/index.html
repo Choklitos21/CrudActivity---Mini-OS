@@ -71,35 +71,30 @@
 
     <section class="logo-central">
         <img src="../media/Images/Google.png" alt="Logo Google" class="logo-abajo">
-        <img class="lupa" src="">
     </section>
 
-    <div class="contenedor-lupa">
-        <img src="../media/Images/simbolo-de-la-interfaz-de-busqueda.png" alt="">
+    <section class="contenedor-lupa">
+        <img src="../media/Images/simbolo-de-la-interfaz-de-busqueda.png" alt="Buscar">
         <input type="text" placeholder="Buscar en Google o escribir una URL">
-    </div>
-
+    </section>
 
     <section class="paginas-recientes">
-        <div class="titulo-recientes">
+        <header class="titulo-recientes">
             <h3>Accesos directos</h3>
             <button class="btn-personalizar" onclick="toggleEditMode()">Personalizar</button>
-        </div>
-        <div class="grid-recientes" id="gridRecientes"></div>
+        </header>
+        <div id="gridRecientes" class="grid-recientes"></div>
     </section>
 
-
-    <div class="modal" id="modalAgregar">
-        <div class="modal-content">
-            <h2>Agregar acceso directo</h2>
-            <input type="text" id="inputNombre" placeholder="Nombre">
-            <input type="url" id="inputUrl" placeholder="URL (https://...)">
-            <div class="modal-buttons">
-                <button class="btn-modal btn-cancelar" onclick="cerrarModal()">Cancelar</button>
-                <button class="btn-modal btn-guardar" onclick="guardarPagina()">Guardar</button>
-            </div>
-        </div>
-    </div>
+    <dialog class="modal" id="modalAgregar">
+        <h2>Agregar acceso directo</h2>
+        <input type="text" id="inputNombre" placeholder="Nombre">
+        <input type="url" id="inputUrl" placeholder="URL (https://...)">
+        <nav class="modal-buttons">
+            <button class="btn-modal btn-cancelar" onclick="cerrarModal()">Cancelar</button>
+            <button class="btn-modal btn-guardar" onclick="guardarPagina()">Guardar</button>
+        </nav>
+    </dialog>
 
     <script src="script.js"></script>
 </body>

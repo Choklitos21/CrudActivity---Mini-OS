@@ -9,12 +9,12 @@ botonRecargar.addEventListener('click', function () {
 
 
 const paginasPredeterminadas = [
-    { nombre: 'YouTube', url: 'https://youtube.com', favicon: 'https://www.youtube.com/favicon.ico' },
-    { nombre: 'Gmail', url: 'https://gmail.com', favicon: 'https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico' },
-    { nombre: 'Facebook', url: 'https://facebook.com', favicon: 'https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico' },
-    { nombre: 'Twitter', url: 'https://twitter.com', favicon: 'https://abs.twimg.com/favicons/twitter.2.ico' },
-    { nombre: 'Instagram', url: 'https://instagram.com', favicon: 'https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png' },
-    { nombre: 'Amazon', url: 'https://amazon.com', favicon: 'https://www.amazon.com/favicon.ico' }
+    { nombre: 'YouTube', url: 'https://youtube.com', favicon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=128' },
+    { nombre: 'Gmail', url: 'https://gmail.com', favicon: 'https://www.google.com/s2/favicons?domain=gmail.com&sz=128' },
+    { nombre: 'Facebook', url: 'https://facebook.com', favicon: 'https://www.google.com/s2/favicons?domain=facebook.com&sz=128' },
+    { nombre: 'Twitter', url: 'https://twitter.com', favicon: 'https://www.google.com/s2/favicons?domain=twitter.com&sz=128' },
+    { nombre: 'Instagram', url: 'https://instagram.com', favicon: 'https://www.google.com/s2/favicons?domain=instagram.com&sz=128' },
+    { nombre: 'Amazon', url: 'https://amazon.com', favicon: 'https://www.google.com/s2/favicons?domain=amazon.com&sz=128' }
 ];
 
 let paginas = [...paginasPredeterminadas];
@@ -95,7 +95,7 @@ function guardarPagina() {
     const nuevaPagina = {
         nombre: nombre,
         url: url,
-        favicon: `https://www.google.com/s2/favicons?domain=${url}&sz=64`
+        favicon: `https://www.google.com/s2/favicons?domain=${url}&sz=128`
     };
 
     paginas.push(nuevaPagina);
