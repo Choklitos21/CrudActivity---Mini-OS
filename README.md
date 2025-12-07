@@ -1,5 +1,5 @@
 NOMBRE DEL PROYECTO.
-    - Chokintosh OS — Proyecto Académico
+    - Chokintosh OS 
 
 INTEGRANTES DEL EQUIPO
 Diego Alejandro Morales Montoya
