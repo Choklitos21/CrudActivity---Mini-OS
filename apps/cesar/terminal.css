@@ -12,6 +12,7 @@ html {
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     font-style: normal;
+    background-color: rgb(240, 240, 240);
 }
 .contenedor-principal-terminal {
     width: 60%;
@@ -22,36 +23,42 @@ html {
     border-radius: 11px;
     margin-top: 50px;
 }
+
+/* ---------------------------------------------------- */
+
 .contenedor-barra-terminal {
-    width: 100%;
-    height: 30px;
     display: flex;
-    justify-content: start;
+    gap: 8px;
+    padding: 10px;
     background-color: #fff;
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
 }
-.contenedor-barra-terminal button {
-    width: 15px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 6px 5px 0 5px;
+.btn {
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    border: 1px solid red;
-    background-color: red;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.contenedor-barra-terminal .min {
-    background-color: rgb(228, 228, 1);
-    border: none;
+.cerrar { background: #ff5f57; }
+.minimizar { background: #ffbd2e; }
+.maximizar { background: #28c840; }
+
+.btn .icono {
+    font-size: 10px;
+    color: #000;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+.btn:hover .icono {
+    opacity: 1;
 }
 
-.contenedor-barra-terminal .expan {
-    background-color: rgba(0, 128, 0, 0.829);
-    border: none;
-}
-/*  */
+/* --------------------------------------------- */
 .contenedor-terminal {
     width: 100%;
     margin-top: 12px;
